@@ -9,6 +9,7 @@
     { "src": "/medkart-architecture[.]html", "dest": "/medkart-architecture.html" },
     { "src": "/food-delivery-architecture[.]html", "dest": "/food-delivery-architecture.html" },
     { "src": "/medkart-architecture[.]png", "dest": "/medkart-architecture.png" },
+    { "src": "/food-delivery-architecture[.]png", "dest": "/food-delivery-architecture.png" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
