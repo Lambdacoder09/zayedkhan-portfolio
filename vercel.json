@@ -7,6 +7,7 @@
   ],
   "routes": [
     { "src": "/medkart-architecture[.]html", "dest": "/medkart-architecture.html" },
+    { "src": "/food-delivery-architecture[.]html", "dest": "/food-delivery-architecture.html" },
     { "src": "/medkart-architecture[.]png", "dest": "/medkart-architecture.png" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
