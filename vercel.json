@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "zayedkhan-portfolio",
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.png", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/medkart-architecture[.]html", "dest": "/medkart-architecture.html" },
+    { "src": "/medkart-architecture[.]png", "dest": "/medkart-architecture.png" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

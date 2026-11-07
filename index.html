@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zayed Khan | Forward Deployed Engineer (FDE)</title>
+  <meta name="description" content="Forward Deployed Engineer specializing in hyperlocal e-commerce infrastructure, distributed microservices, and multi-agent AI orchestration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #070B14;
+      color: #F1F5F9;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .grid-pattern {
+      background-image: radial-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .glow-card {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.4) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      transition: all 0.3s ease;
+    }
+    .glow-card:hover {
+      border-color: rgba(56, 189, 248, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.2);
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-sky-500 selection:text-white grid-pattern">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 inset-x-0 z-50 border-b border-slate-800/80 bg-[#070B14]/80 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="size-8 rounded-lg bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 font-mono font-bold text-sm group-hover:scale-105 transition-transform">
+          ZK
+        </div>
+        <span class="font-semibold text-sm tracking-tight text-slate-100 group-hover:text-sky-400 transition-colors">Zayed Khan</span>
+        <span class="hidden sm:inline-block px-2 py-0.5 rounded-full text-[10px] font-mono bg-sky-500/10 text-sky-400 border border-sky-500/20">FDE</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-400">
+        <a href="#about" class="hover:text-slate-100 transition-colors">Specialization</a>
+        <a href="#microservices" class="hover:text-slate-100 transition-colors">Microservices</a>
+        <a href="#projects" class="hover:text-slate-100 transition-colors">Deployments</a>
+        <a href="#stack" class="hover:text-slate-100 transition-colors">Arsenal</a>
+        <a href="#contact" class="hover:text-slate-100 transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/Lambdacoder09" target="_blank" rel="noopener" class="text-slate-400 hover:text-white p-2 transition-colors">
+          <svg class="size-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 transition-colors">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-4 sm:px-6 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      
+      <!-- Live Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-mono">
+        <span class="size-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Available for Strategic Forward Deployed Engineering
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+        Engineering Production <br class="hidden sm:block"/>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-300 to-sky-200">
+          Commerce & Agentic AI
+        </span>
+      </h1>
+
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+        Hi, I'm <strong class="text-white font-semibold">Zayed Khan</strong> — a Forward Deployed Engineer specializing in high-throughput hyperlocal e-commerce architectures, distributed microservices, and multi-agent AI orchestration.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+        <a href="#projects" class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-sky-500/20">
+          Explore Production Deployments
+        </a>
+        <a href="https://github.com/Lambdacoder09" target="_blank" rel="noopener" class="px-6 py-3 rounded-xl border border-slate-700 hover:border-slate-500 bg-slate-900/60 text-slate-200 font-semibold text-sm transition-all flex items-center gap-2">
+          <span>GitHub Profile</span>
+          <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Metrics Bar -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-12 border-t border-slate-800/80">
+        <div class="p-4 rounded-xl glow-card text-center">
+          <div class="text-2xl sm:text-3xl font-mono font-bold text-sky-400">87+</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Public Repos</div>
+        </div>
+        <div class="p-4 rounded-xl glow-card text-center">
+          <div class="text-2xl sm:text-3xl font-mono font-bold text-indigo-400">2,332</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Pages CS Corpus</div>
+        </div>
+        <div class="p-4 rounded-xl glow-card text-center">
+          <div class="text-2xl sm:text-3xl font-mono font-bold text-emerald-400">4+</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Live Microservices</div>
+        </div>
+        <div class="p-4 rounded-xl glow-card text-center">
+          <div class="text-2xl sm:text-3xl font-mono font-bold text-purple-400">100%</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Production Uptime</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Specialization Section -->
+  <section id="about" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-sky-400 mb-2">Core Philosophy</h2>
+      <h3 class="text-3xl font-bold text-white tracking-tight">The Forward Deployed Mindset</h3>
+      <p class="text-slate-400 text-sm mt-3">
+        Forward Deployed Engineering means embedding at the problem boundary — taking commercial requirements directly into hardened, scalable, and statutory-compliant software.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="glow-card p-6 rounded-2xl space-y-4">
+        <div class="size-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+        </div>
+        <h4 class="text-lg font-bold text-white">Hyperlocal E-Commerce Infrastructure</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Building end-to-end retail systems: real-time rider tracking, WhatsApp-based automated ordering, dual-rail payments (Razorpay/Paytm), and compliance architectures (Schedule H/H1, DPDP Act 2023).
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="glow-card p-6 rounded-2xl space-y-4">
+        <div class="size-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h4 class="text-lg font-bold text-white">Agentic AI & Protocol Bridges (MCP)</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Designing Model Context Protocol (MCP) servers, hierarchical team leader agents, autonomous scraper pipelines with anti-bounce deliverability, and self-healing LLM workflows.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="glow-card p-6 rounded-2xl space-y-4">
+        <div class="size-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+        </div>
+        <h4 class="text-lg font-bold text-white">Systems, PostGIS & Reliability</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          PostgreSQL with PostGIS coordinate routing, Linux daemon internals, offline-first Progressive Web Apps (service worker shells), and performance engineering across TypeScript, Python & Java.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Microservices Architecture Section -->
+  <section id="microservices" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-indigo-400 mb-2">Microservices</h2>
+      <h3 class="text-3xl font-bold text-white tracking-tight">Decoupled Service Architectures</h3>
+      <p class="text-slate-400 text-sm mt-3">
+        Modular services built for independent scalability, zero-downtime rollouts, and stateless reliability.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-6">
+
+      <div class="glow-card p-6 rounded-2xl space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="px-2.5 py-1 rounded-md bg-sky-500/10 text-sky-400 text-xs font-mono border border-sky-500/20">Fleet Dispatch</span>
+          <span class="text-xs text-slate-500 font-mono">apps/commander</span>
+        </div>
+        <h4 class="text-lg font-bold text-white">Hyperlocal Fleet Telemetry & Order Routing</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Decouples the customer storefront (`apps/customer`) from live rider dispatch (`apps/delivery`), providing real-time GPS telemetry, order pool claiming, and merchant desktop POS integration.
+        </p>
+      </div>
+
+      <div class="glow-card p-6 rounded-2xl space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-mono border border-emerald-500/20">Serverless AWS</span>
+          <span class="text-xs text-slate-500 font-mono">whatsapp-api</span>
+        </div>
+        <h4 class="text-lg font-bold text-white">Headless WhatsApp Commerce Gateway</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Standalone microservice deployed on AWS Lambda / Node with headless Chromium session resilience, QR re-authentication, and instant transaction notification dispatch.
+        </p>
+      </div>
+
+      <div class="glow-card p-6 rounded-2xl space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-mono border border-cyan-500/20">Fintech Bridge</span>
+          <span class="text-xs text-slate-500 font-mono">paytm-mcp-bridge</span>
+        </div>
+        <h4 class="text-lg font-bold text-white">Payment Gateway Adapter Service</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Dedicated payment adapter isolating signature verification, checksum calculations, and webhook status callbacks from core application databases.
+        </p>
+      </div>
+
+      <div class="glow-card p-6 rounded-2xl space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-400 text-xs font-mono border border-purple-500/20">AI Protocol</span>
+          <span class="text-xs text-slate-500 font-mono">team-leader-mcp</span>
+        </div>
+        <h4 class="text-lg font-bold text-white">Agentic Team Leader MCP Service</h4>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Multi-agent bridge orchestrating distributed AI workers via Model Context Protocol schemas, delegating specialized coding and research tasks with checkpointing.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured Deployments -->
+  <section id="projects" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-emerald-400 mb-2">Portfolio</h2>
+      <h3 class="text-3xl font-bold text-white tracking-tight">Key Production Deployments</h3>
+      <p class="text-slate-400 text-sm mt-3">
+        Production systems delivered with high code quality, legal compliance, and performance benchmarks.
+      </p>
+    </div>
+
+    <div class="space-y-8">
+
+      <!-- Project 1: MedKart -->
+      <div class="glow-card p-8 rounded-2xl grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded-md bg-sky-500/10 text-sky-400 text-xs font-mono border border-sky-500/20">Next.js 16 • Supabase • Firebase</span>
+            <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-mono">PWA + Android</span>
+          </div>
+          <h4 class="text-2xl font-bold text-white">MedKart — Digital Pharmacy & Hyperlocal Delivery Platform</h4>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Full-stack Indian medicine commerce platform with 2,400+ indexed pharmaceuticals. Includes real-time WhatsApp dispatch, dual payment gateway integration (Razorpay & Paytm), PostGIS geolocation routing, rider dispatch dashboard, prescription security audit, and DPDP Act 2023 privacy controls.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Next.js 16</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">TypeScript</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Supabase PostGIS</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Razorpay & Paytm</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Service Workers</span>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between border-t md:border-t-0 md:border-l border-slate-800 md:pl-6 pt-4 md:pt-0">
+          <div class="space-y-2 text-xs text-slate-400">
+            <div><strong>Deployment:</strong> Vercel Global Edge</div>
+            <div><strong>Compliance:</strong> Drugs & Cosmetics Act, DPDP 2023</div>
+            <div><strong>Payments:</strong> UPI, Card, NetBanking, COD</div>
+          </div>
+          <a href="https://github.com/A-L-I-C-E-Labs/medkart" target="_blank" rel="noopener" class="mt-4 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition-colors">
+            <span>Inspect Repository</span>
+            <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- MedKart Architecture Assets -->
+      <div class="glow-card p-6 rounded-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-widest text-emerald-400">Architecture Map</span>
+            <h4 class="text-xl font-bold text-white mt-1">Explore the MedKart system design</h4>
+            <p class="text-slate-400 text-sm mt-1">Interactive component map and a shareable PNG overview.</p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="/medkart-architecture.html" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 text-xs font-bold transition-colors">Open interactive map</a>
+            <a href="/medkart-architecture.png" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition-colors">View PNG</a>
+            <a href="/medkart-architecture.png" download class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-200 text-xs font-semibold transition-colors">Download PNG</a>
+          </div>
+        </div>
+        <a href="/medkart-architecture.png" target="_blank" rel="noopener" class="block mt-5 overflow-hidden rounded-xl border border-slate-700/70 bg-white p-2">
+          <img src="/medkart-architecture.png" alt="MedKart application architecture map" class="w-full h-auto rounded-lg" loading="lazy">
+        </a>
+      </div>
+      <!-- Food Delivery Architecture Map -->
+      <div class="glow-card p-6 rounded-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-widest text-amber-300">Food Delivery Ecosystem</span>
+            <h4 class="text-xl font-bold text-white mt-1">Explore the Tripti Foods architecture</h4>
+            <p class="text-slate-400 text-sm mt-1">Interactive map of customer, rider, kitchen, admin, edge API, and platform services.</p>
+          </div>
+          <a href="/food-delivery-architecture.html" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-amber-300 hover:bg-amber-200 text-slate-950 text-xs font-bold transition-colors">Open interactive map</a>
+        </div>
+      </div>
+      <!-- Project 2: Placement Prep -->
+      <div class="glow-card p-8 rounded-2xl grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-400 text-xs font-mono border border-indigo-500/20">CS Publication</span>
+            <span class="px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-400 text-xs font-mono">2,332 Pages</span>
+          </div>
+          <h4 class="text-2xl font-bold text-white">Placement Prep Compendium & Systems Corpus</h4>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Five-volume comprehensive engineering textbook written in Typst. Spans 76 chapters and 3,258 original problems covering Data Structures & Algorithms, Distributed System Design, Database Internals, and Computer Science fundamentals tiered across product companies.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">System Design</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">DSA</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Database Internals</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Typst</span>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between border-t md:border-t-0 md:border-l border-slate-800 md:pl-6 pt-4 md:pt-0">
+          <div class="space-y-2 text-xs text-slate-400">
+            <div><strong>Volumes:</strong> 5 Books</div>
+            <div><strong>Total Pages:</strong> 2,332 Pages</div>
+            <div><strong>Format:</strong> High-Definition Print Typst</div>
+          </div>
+          <a href="https://github.com/Lambdacoder09/placement-prep" target="_blank" rel="noopener" class="mt-4 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition-colors">
+            <span>View Compendium</span>
+            <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3: Startup Job Hunter -->
+      <div class="glow-card p-8 rounded-2xl grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-mono border border-emerald-500/20">Agentic AI Engine</span>
+            <span class="px-2.5 py-1 rounded-md bg-sky-500/10 text-sky-400 text-xs font-mono">Python • SMTP Validation</span>
+          </div>
+          <h4 class="text-2xl font-bold text-white">Startup Job Hunter & Deliverability Engine</h4>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Autonomous agent workflow for company harvesting across tech hubs (UAE, Singapore, US, Europe) with real-time MX/DNS anti-bounce deliverability validation, rate-limited dispatch, and self-healing IMAP status feedback.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Python</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">DNS & MX Handshake</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Anti-Bounce</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">State Machine</span>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between border-t md:border-t-0 md:border-l border-slate-800 md:pl-6 pt-4 md:pt-0">
+          <div class="space-y-2 text-xs text-slate-400">
+            <div><strong>Verification:</strong> Anti-bounce SMTP handshake</div>
+            <div><strong>Target Hubs:</strong> Global Tech Hubs</div>
+            <div><strong>Delivery:</strong> 99%+ deliverability</div>
+          </div>
+          <a href="https://github.com/Lambdacoder09/startup-job-hunter-skill" target="_blank" rel="noopener" class="mt-4 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition-colors">
+            <span>Inspect Engine</span>
+            <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Arsenal Matrix -->
+  <section id="stack" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-sky-400 mb-2">Skills & Tools</h2>
+      <h3 class="text-3xl font-bold text-white tracking-tight">The Technical Arsenal</h3>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <div class="glow-card p-5 rounded-xl space-y-3">
+        <h4 class="text-sm font-mono font-bold text-sky-400 uppercase tracking-wider">Languages</h4>
+        <ul class="text-sm text-slate-300 space-y-2">
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-sky-400"></span>TypeScript & JavaScript</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-sky-400"></span>Python (Async / AI)</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-sky-400"></span>Java (NeoForge Engine)</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-sky-400"></span>SQL / PostGIS</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-sky-400"></span>Bash & Linux Shell</li>
+        </ul>
+      </div>
+
+      <div class="glow-card p-5 rounded-xl space-y-3">
+        <h4 class="text-sm font-mono font-bold text-indigo-400 uppercase tracking-wider">Frontend & Edge</h4>
+        <ul class="text-sm text-slate-300 space-y-2">
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-indigo-400"></span>Next.js 16 (App Router)</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-indigo-400"></span>React 19 & React Server</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-indigo-400"></span>Tailwind CSS v4</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-indigo-400"></span>Offline-first PWA</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-indigo-400"></span>Turbopack Bundler</li>
+        </ul>
+      </div>
+
+      <div class="glow-card p-5 rounded-xl space-y-3">
+        <h4 class="text-sm font-mono font-bold text-emerald-400 uppercase tracking-wider">Backend & Cloud</h4>
+        <ul class="text-sm text-slate-300 space-y-2">
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-emerald-400"></span>Supabase & PostgreSQL</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-emerald-400"></span>Firebase (Auth / Rules)</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-emerald-400"></span>AWS Lambda Serverless</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-emerald-400"></span>Razorpay & Paytm Gateways</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-emerald-400"></span>Redis Cache / Locks</li>
+        </ul>
+      </div>
+
+      <div class="glow-card p-5 rounded-xl space-y-3">
+        <h4 class="text-sm font-mono font-bold text-purple-400 uppercase tracking-wider">AI & Protocols</h4>
+        <ul class="text-sm text-slate-300 space-y-2">
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-purple-400"></span>Model Context Protocol (MCP)</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-purple-400"></span>Multi-Agent Swarms</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-purple-400"></span>Firecrawl Web Scraping</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-purple-400"></span>Puppeteer Headless</li>
+          <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-purple-400"></span>Self-Healing Tool Loops</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Connect -->
+  <section id="contact" class="py-20 px-4 sm:px-6 max-w-4xl mx-auto text-center border-t border-slate-800/80">
+    <div class="glow-card p-8 sm:p-12 rounded-3xl space-y-6">
+      <span class="text-xs font-mono font-semibold uppercase tracking-widest text-sky-400">Direct Communication</span>
+      <h3 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Let's Build Something Remarkable</h3>
+      <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+        Whether you are scaling an e-commerce platform, integrating agentic AI infrastructure, or looking for an impactful Forward Deployed Engineer — let's connect.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+        <a href="mailto:zayedkhan.dev@gmail.com" class="px-6 py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-sky-500/25 flex items-center gap-2">
+          <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>zayedkhan.dev@gmail.com</span>
+        </a>
+        <a href="https://discord.com" class="px-6 py-3.5 rounded-xl border border-slate-700 hover:border-slate-500 bg-slate-900/60 text-slate-200 font-semibold text-sm transition-all flex items-center gap-2">
+          <span>Discord: <strong class="text-white font-mono">zayedkhan256</strong></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 py-8 px-4 text-center text-xs text-slate-500 font-mono">
+    <div>Designed & Deployed by <span class="text-slate-300">Zayed Khan</span> • Forward Deployed Engineer</div>
+    <div class="mt-1">Powered by Vercel Global Edge Network</div>
+  </footer>
+
+</body>
+</html>
+
+
+
